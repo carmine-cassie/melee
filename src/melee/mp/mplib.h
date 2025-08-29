@@ -50,7 +50,9 @@
                                 float, float, float);
 /* 0524DC */ bool mpLib_800524DC(Vec3*, int, Vec3*, Vec3*, int, int, float x,
                                  float y, float z, float);
-/* 052508 */ UNK_RET mpLib_80052508(UNK_PARAMS);
+/* 052508 */ s32 mpLib_80052508(Point3d* arg0, s32* arg1, s32* arg2,
+                                Point3d* arg3, s32 arg4, s32 arg5, f32 farg0,
+                                f32 farg1, f32 farg2, f32 farg3);
 /* 052534 */ int mpLib_80052534(int);
 /* 052700 */ s32 mpLib_80052700(int idx);
 /* 0528CC */ UNK_RET mpLib_800528CC(UNK_PARAMS);

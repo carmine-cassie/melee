@@ -172,9 +172,20 @@ bool mpLib_8004E97C(double arg0, double arg1, double arg2, double arg3,
 
 /// #mpLib_80051EC8
 
-/// #mpLib_800524DC
+bool mpLib_800524DC(Point3d* arg0, int arg1, Point3d* arg2, Point3d* arg3,
+                    int arg4, int arg5, f32 x, f32 y, f32 z, f32 farg3)
+{
+    return mpLib_80051EC8(arg0, (s32*) arg1, (s32*) arg2, arg3, 0x1F, arg4,
+                          arg5, x, y, z, farg3);
+}
 
-/// #mpLib_80052508
+s32 mpLib_80052508(Point3d* arg0, s32* arg1, s32* arg2, Point3d* arg3,
+                   s32 arg4, s32 arg5, f32 farg0, f32 farg1, f32 farg2,
+                   f32 farg3)
+{
+    return mpLib_80051EC8(arg0, arg1, arg2, arg3, 0xF, arg4, arg5, farg0,
+                          farg1, farg2, farg3);
+}
 
 /// #mpLib_80052534
 
